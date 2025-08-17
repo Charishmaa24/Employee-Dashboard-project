@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cognizant Employee Dashboard</title>
+  <link rel="stylesheet" href="styleC.css">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <div class="logo">Cognizant</div>
+    <nav>
+      <button onclick="showSection('home')">Home</button>
+      <button onclick="showSection('tasks')">Tasks</button>
+      <button onclick="showSection('profile')">Profile</button>
+    </nav>
+  </header>
+
+  <!-- Main Sections -->
+  <main>
+    <section id="home" class="active">
+      <h2>Welcome to Cognizant</h2>
+      <p>This is a sample employee dashboard project. Use the navigation to explore features.</p>
+    </section>
+
+    <section id="tasks">
+      <h2>Employee Tasks</h2>
+      <div class="task-input">
+        <input type="text" id="taskInput" placeholder="Enter new task...">
+        <button onclick="addTask()">Add Task</button>
+      </div>
+      <ul id="taskList"></ul>
+    </section>
+
+    <section id="profile">
+      <h2>Profile</h2>
+      <form id="profileForm">
+        <label>Name: <input type="text" id="empName" required></label><br>
+        <label>Department: <input type="text" id="empDept" required></label><br>
+        <button type="submit">Save</button>
+      </form>
+      <div id="profileDisplay"></div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Cognizant (Sample project)</p>
+  </footer>
+
+  <script src="scriptC.js"></script>
+</body>
+</html>
